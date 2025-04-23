@@ -1,0 +1,129 @@
+!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>KVeggies</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <style>
+     html { scroll-behavior: smooth; }
+   </style>
+ </head>
+ <body class="bg-green-50 font-sans text-gray-800">
+ 
+   <!-- Navbar -->
+   <nav class="bg-green-700 text-white px-6 py-4 shadow-md">
+     <div class="max-w-6xl mx-auto flex justify-between items-center">
+       <h1 class="text-xl font-bold">KVeggies</h1>
+       <div class="space-x-6">
+         <a href="#home" class="hover:underline">Home</a>
+         <a href="#about" class="hover:underline">About</a>
+         <a href="#plans" class="hover:underline">Plans</a>
+         <a href="#contact" class="hover:underline">Contact</a>
+       </div>
+     </div>
+   </nav>
+ 
+   <!-- Home -->
+   <section id="home" class="bg-green-100 py-20 px-6 text-center">
+     <div class="max-w-3xl mx-auto">
+       <h2 class="text-4xl font-bold mb-4">Welcome to KVeggies</h2>
+       <p class="text-xl text-gray-700 mb-6">Fresh and quality vegetables deliver to your doorstep every week.</p>
+       <a href="#plans" class="bg-green-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-green-700 transition">Explore Plans</a>
+     </div>
+   </section>
+ 
+   <!-- About Us -->
+   <section id="about" class="bg-white py-12 px-6 shadow-inner">
+     <div class="max-w-4xl mx-auto text-center">
+       <h2 class="text-3xl font-bold mb-4">About Us</h2>
+       <p class="text-gray-700 text-lg">
+         At <strong>KVeggies</strong>, we believe that everyone deserves access to fresh, high-quality vegetables.
+         Our mission is to bring nature’s goodness straight from the farm to your doorstep.
+         We partner with trusted local farmers to deliver seasonal, sustainable, and delicious produce every week.
+       </p>
+     </div>
+   </section>
+ 
+   <!-- Vegetables List for Plans -->
+   <section id="vegetables-list" class="bg-green-100 py-10 px-6 text-center">
+     <h2 class="text-2xl font-bold mb-6">Included Vegetables in All Plans</h2>
+     <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+       Tomatoes, Potatoes, Onions, Carrots, Green Beans, Cauliflower or Cabbage, Palak or Mint or Gongura,
+       Bottle Gourd, Ridge Gourd, Brinjal, Drumstick, Ladysfinger, Green Chillies, Beetroot, Coriander Leaves, Curry Leaves
+     </p>
+   </section>
+ 
+   <!-- Plans -->
+   <section id="plans" class="p-6 max-w-5xl mx-auto">
+     <h2 class="text-2xl font-semibold mb-4 text-center">Choose Your Plan</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+       <!-- Mini Plan -->
+       <div class="bg-white p-6 rounded-2xl shadow-md border hover:shadow-xl transition">
+         <h3 class="text-xl font-bold mb-2">Mini Plan</h3>
+         <p class="text-gray-600 mb-4">10 types of seasonal vegetables, including tomatoes, potatoes, onions, and more.</p>
+         <p class="text-2xl font-bold mb-4">₹1599/month</p>
+         <p class="text-gray-600 mb-4">Included vegetables: Tomatoes 500gm, Potatoes 1kg, Onions 500gm, Carrots 500gm, GreenBeans 250gm, Cauliflower or Cabbage 1large piece, Palak or Mint or Gongura 1bunch, Bottle Gourd 1piece, Ridge Gourd 1piece, Brinjal 500gm, Drumstick 1bunch, Ladysfinger 250gm, Green Chillies 100gm, Beetroot 2pieces, Coriander Leaves, Curry Leaves 1bunch</p>
+         <input type="number" value="1" min="1" class="w-full p-2 border rounded mt-2 mb-4"/>
+       </div>
+       <!-- Basic Plan -->
+       <div class="bg-white p-6 rounded-2xl shadow-md border hover:shadow-xl transition">
+         <h3 class="text-xl font-bold mb-2">Basic Plan</h3>
+         <p class="text-gray-600 mb-4">10 types of seasonal vegetables, including tomatoes, potatoes, onions, and more.</p>
+         <p class="text-2xl font-bold mb-4">₹2199/month</p>
+         <p class="text-gray-600 mb-4">Included vegetables: Tomatoes 1kg, Potatoes 1kg, Onions 1kg, Carrots 750gm, Green Beans 500gm, Cauliflower or Cabbage 1 largepieces, Palak or Mint or Gongura 2bunch, Bottle Gourd 1piece, Ridge Gourd 2piece, Brinjal 750gm, Drumstick 2bunch, Ladysfinger 500gm, Green Chillies 250gm, Beetroot 3pieces, Coriander Leaves, Curry Leaves 2smallbunch</p>
+         <input type="number" value="1" min="1" class="w-full p-2 border rounded mt-2 mb-4"/>
+       </div>
+       <!-- Premium Plan -->
+       <div class="bg-white p-6 rounded-2xl shadow-md border hover:shadow-xl transition">
+         <h3 class="text-xl font-bold mb-2">Premium Plan</h3>
+         <p class="text-gray-600 mb-4">10 types of vegetables, including exotic options and your regular staples.</p>
+         <p class="text-2xl font-bold mb-4">₹2699/month</p>
+         <p class="text-gray-600 mb-4">Included vegetables: Tomatoes 1.5kg, Potatoes 1.5kg, Onions 1.5kg, Carrots 750gm, Green Beans 750gm, Cauliflower or Cabbage, Palak or Mint or Gongura 2bunch, Bottle Gourd 1.5piece, Ridge Gourd or Bitter Gourd 2 pieces, Brinjal 750gm, Drumstick 2largebunch, Ladysfinger 750gm, Green Chillies 400gm, Beetroot 4piece, Coriander Leaves 2smallbunch, Curry Leaves 2smallbunch</p>
+         <input type="number" value="1" min="1" class="w-full p-2 border rounded mt-2 mb-4"/>
+       </div>
+     </div>
+ 
+     <!-- Customer Details Form -->
+     <div class="mt-12 bg-white p-6 rounded-xl shadow-md max-w-xl mx-auto">
+       <h3 class="text-xl font-bold mb-4 text-center">Submit Your Details</h3>
+       <form id="whatsappForm" class="space-y-4">
+         <input type="text" id="name" placeholder="Your Name" required class="w-full p-2 border rounded"/>
+         <input type="text" id="address" placeholder="Your Address" required class="w-full p-2 border rounded"/>
+         <select id="plan" class="w-full p-2 border rounded" required>
+           <option value="Mini Plan - ₹1599">Mini Plan - ₹1599</option>
+           <option value="Basic Plan - ₹2199">Basic Plan - ₹2199</option>
+           <option value="Premium Plan - ₹2699">Premium Plan - ₹2699</option>
+         </select>
+         <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">Send on WhatsApp</button>
+       </form>
+     </div>
+   </section>
+ 
+   <!-- Contact -->
+   <section id="contact" class="bg-white py-10 text-center">
+     <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+     <div class="flex justify-center space-x-6 text-3xl text-green-600">
+       <a href="tel:+917730814093" aria-label="Phone"><i class="fas fa-phone"></i></a>
+       <a href="mailto:info@kveggies.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+       <a href="https://instagram.com/kveggies_" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-8 h-8 inline"></a>
+       <a href="https://facebook.com" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-8 h-8 inline"></a>
+       <a href="https://twitter.com" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-8 h-8 inline"></a>
+     </div>
+   </section>
+ 
+   <script>
+     document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+       e.preventDefault();
+       const name = document.getElementById('name').value;
+       const address = document.getElementById('address').value;
+       const plan = document.getElementById('plan').value;
+       const message = `Hello! My name is ${name}. I want to subscribe to ${plan}. My address is: ${address}`;
+       const whatsappUrl = `https://wa.me/917730814093?text=${encodeURIComponent(message)}`;
+       window.open(whatsappUrl, '_blank');
+     });
+   </script>
+ 
+ </body>
+ </html>
